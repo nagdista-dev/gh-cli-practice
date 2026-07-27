@@ -1,5 +1,11 @@
 # GH CLI Practice
 
+<p align="center">
+  <img src="https://img.shields.io/badge/GitHub_CLI-gh-2088FF?style=for-the-badge&logo=github&logoColor=white" alt="GitHub CLI" />
+  <img src="https://img.shields.io/badge/Shell-Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Shell" />
+  <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License" />
+</p>
+
 Hands-on practice exercises for mastering **GitHub CLI (`gh`)** — the official command-line tool for GitHub.
 
 ## What's Inside
@@ -30,25 +36,35 @@ gh repo clone nagdista-dev/gh-cli-practice
 gh auth status
 ```
 
-## Useful Commands Reference
+## Commands Reference
+
+### Repos
 
 ```bash
-# Repos
 gh repo list
 gh repo create my-repo --public
 gh repo view
+```
 
-# Pull Requests
+### Pull Requests
+
+```bash
 gh pr create --title "My PR" --body "Description"
 gh pr list
 gh pr checkout <pr-number>
+```
 
-# Issues
+### Issues
+
+```bash
 gh issue create --title "Bug" --body "Details"
 gh issue list
 gh issue close <issue-number>
+```
 
-# General
+### General
+
+```bash
 gh browse
 gh api /user
 ```
@@ -56,4 +72,4 @@ gh api /user
 ## Resources
 
 - [GitHub CLI Official Docs](https://cli.github.com/manual/)
-- [GitHub CLI Cheat Sheet](https://raw.githubusercontent.com/cli/cli/trunk/pkg/cmd/pr/shared/defaults.go)
+- [GitHub CLI Cheat Sheet](https://docs.github.com/en/get-started/using-github/github-cli)
